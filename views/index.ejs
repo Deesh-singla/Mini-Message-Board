@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <%= title %>
+    </h1>
+
+    <div class="message-list">
+        <% messages.map(msg=> { %>
+            <div class="message-card">
+                <p><span class="label">From:</span> <strong>
+                        <%= msg.user %>
+                    </strong></p>
+                <p><span class="label">Message:</span>
+                    <%= msg.text %>
+                </p>
+                <p><span class="label">Posted at:</span>
+                    <%= msg.added.toLocaleString() %>
+                </p>
+                <a href="/message/<%= msg.user %>">Open</a>
+            </div>
+            <% }) %>
+    </div>
+
+    <a class="add-link" href="/new">Add New Message</a>
+
+</body>
+
+</script>
+
+</html>

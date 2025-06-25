@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Add New Message</h1>
+    <form action="/new" method="post">
+        <div>
+            <label for="authName">Author Name:</label>
+            <input type="text" id="authName" name="author" required>
+        </div>
+        <div>
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="message" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="back-btn-container">
+        <a href="/" class="back-button">← Back</a>
+    </div>
+</body>
+
+</html>

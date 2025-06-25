@@ -1,0 +1,139 @@
+/* Reset & font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    padding: 2rem;
+    margin: 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: auto;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0194a8;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.message-card {
+    background: #fff;
+    padding: 1rem;
+    border-left: 5px solid #00bcd4;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.message-card h3 {
+    margin: 0.5rem 0;
+}
+
+.message-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.message-card a:hover {
+    text-decoration: underline;
+}
+
+.message-detail {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.message-detail div {
+    margin-bottom: 1rem;
+}
+
+a.add-link {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    color: coral;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.add-link:hover {
+    text-decoration: underline;
+}
+
+.back-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.back-button {
+    background-color: #ff7043;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e45a2c;
+}
+
+.message-card p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.label {
+    color: #888;
+    font-weight: bold;
+    margin-right: 0.3rem;
+}
